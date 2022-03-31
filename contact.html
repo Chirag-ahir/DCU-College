@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="icon" type="image/png" href="./Asserts/logo.png">
+    <title>DCU - About</title>
+</head>
+<body>
+
+    <section class="sub-header">
+           <nav>
+              <a href='index.html'><img src="./Asserts/logo.png"></a>
+              <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href='./index.html'>HOME</a></li>
+                      <li><a href='./about.html'>ABOUT</a></li>
+                      <li><a href='./course.html'>COURSE</a></li>
+                      <li><a href='./blog.html'>BLOG</a></li>
+                      <li><a href='./contact.html'>CONTACT</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+              
+           </nav>
+           <h1>Contact US</h1>
+    </section>
+
+    <!-- contact us -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?
+        pb= ! 1m18!1m12!1m3!1d31105.73159475817!2d77.67501137986149!3d12.95799
+       701533806! 2m3!1f0!2f0!3f0!3m2!lj1024!2i768!4f13.1!3m3!lm2!1s0x3bae16
+        70c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1
+        sen!2sin!4v1616407075040!5m2!1sen!2sin" width="600" height="450"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                  <i class="fa fa-home"></i>
+                   <span>
+                       <h5>XYZ Road, ABC Building</h5>
+                       <p>Bangalore, Karnataka, IN</p>
+                   </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                     <span>
+                          <h5>+1_ ©123456789</h5>
+                         <p>Monday to Saturday, 10AM to 6PM</p>
+                     </span>
+                 </div>
+                 <div>
+                    <i class="fa fa-envelope-o"></i>
+                     <span>
+                         <h5>info@easytutorialspro.com</h5>
+                         <p>Email us your query</p>
+                     </span> 
+                 </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn red-btn">Send
+                    Message</button>
+                </form>
+                                        
+            </div>
+         </div>
+    </section>
+   
+
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nihil aut earum temporibus similique illo consectetur placeat at ab molestias.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by HTML | CSS | JS</p>
+    </section>
+
+    
+    <script>
+        // js for toggle menu
+        var navLinks = document.getElementById ("navLinks");
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
